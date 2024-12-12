@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#e9e9e9] scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/logo-fr.png"
+      type="image/x-icon"
+    />
+    <title>چای گلستان</title>
+  </head>
+  <body
+    dir="rtl"
+    class="overflow-x-hidden des:px-[70px] drop-shadow-3xl tablet:px-0 mobile:px-0 dark:bg-gray-400"
+  >
+    <div id="header"></div>
+    <header class="w-full h-[100px] flex flex-wrap sticky top-0">
+      <div
+        class="desktop:w-[30%] mobile:w-full h-full relative bg-[#2b2b2b] mobile:flex mobile:justify-center"
+      >
+        <img
+          class="w-[170px] h-[105px] absolute desktop:top-[40%] desktop:left-0 mobile:top-10"
+          src="./public/img/logo-fr.png"
+          alt=""
+        />
+      </div>
+      <div class="desktop:w-[70%] mobile:w-full h-full bg-[#2b2b2b]">
+        <ul
+          class="flex justify-center text-[#90a0ab] items-end h-full desktop:text-[16px] desktop:py-5 mobile:py-2 mobile:flex-wrap max-tablet:hidden"
+        >
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            <a href="./index.html">صفحه اصلی</a>
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            شرکت گلستان
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            محصولات
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            <a href="./index3.html"> وبلاگ</a>
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            قرعه کشی
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            استخدام
+          </li>
+          <li
+            class="border-l border-[#90a0ab] px-6 hover:text-white hover:font-[500]"
+          >
+            تماس با ما
+          </li>
+          <li class="px-4">
+            <button
+              id="darkbtn"
+              class="bg-slate-400 rounded-lg transition-all text-black w-16 h-6"
+            >
+              Dark
+            </button>
+          </li>
+        </ul>
+        <button
+          id="darkbtn"
+          class="bg-slate-500 rounded-lg hover:scale-110 transition-all text-black w-16 h-7 desktop:hidden tablet:hidden mr-[90%] mt-[60px]"
+        >
+          Dark
+        </button>
+
+        <label for="open">
+          <svg
+            class="w[50px] h-[50px] tablet:hidden block mt-[-40px]"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="24" height="24" fill="white" />
+            <path
+              d="M6 12H18"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 15.5H18"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M6 8.5H18"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </label>
+        <input type="radio" id="open" class="hidden" />
+        <input type="radio" id="close" class="hidden checked:" />
+        <div
+          class="w-full bg-[#2b2b2b] text-[#90a0ab] leading-10 translate-x-[2000px]"
+          id="menu"
+        >
+          <label for="close">
+            <svg
+              class="w-[50px] h-[50px]"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.9393 12L6.9696 15.9697L8.03026 17.0304L12 13.0607L15.9697 17.0304L17.0304 15.9697L13.0607 12L17.0303 8.03039L15.9696 6.96973L12 10.9393L8.03038 6.96973L6.96972 8.03039L10.9393 12Z"
+                fill="#080341"
+              />
+            </svg>
+          </label>
+          <ul class="mr-5">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li>شرکت گلستان</li>
+            <li>محصولات</li>
+            <li><a href="./index3.html"> وبلاگ</a></li>
+            <li>قرعه کشی</li>
+            <li>استخدام</li>
+            <li>تماس با ما</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div
+      class="w-full h-[170px] bg-white max-mobile:mt-24 max-desktop:mt-24 mobile:h-[150px] dark:bg-[#5a5f7b]"
+    >
+      <div
+        class="text-[#ed1c24] text-[30px] font-[500] h-[170px] w-[24%] text-left leading-[170px] dark:bg-[#5a5f7b] dark:text-white"
+      >
+        وبلاگ
+      </div>
+    </div>
+    <div class="bg-[#f7f9fb] flex justify-center dark:bg-[#6b7189]">
+      <div
+        class="w-[1000px] grid desktop:grid-cols-3 justify-items-center gap-y-9 tablet:grid-cols-2 max-tablet:w-[700px] mobile:grid-cols-1"
+      >
+        <!-- item 1 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/1.jpeg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              راهنمای کامل روش پخت انواع حبوبات
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              راهنمای کامل روش پخت حبوبات مختلف حبوبات در هر آشپزخانه‌ای جایگاه
+              ویژه‌ای دارند. این دانه‌های مغذی در وعده‌های غذایی روزمره ما نقشی
+              پررنگ دارند
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] w-full object-cover"
+            src="./public/img2/2.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              تاریخچه برنج
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              تاریخچه برنج برنج ماده اصلی غذایی بیش از یک سوم جمعیت جهان است، در
+              شرق آسیا و منطقه خاورمیانه نیز برنج یکی از پر اهمیت‌ترین
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 3 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/3.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              زرشک راز سلامتی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              زرشک، سرآغازی برای سلامت قلب و آرامش فواید زرشک که با نام علمی
+              Berberis vulgaris شناخته می‌شود فراوان و برای سلامتی مفید است. در
+              گذشته
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 4 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/4.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              تاریخچه برنج : روش‌های تشخیص برنج مرغوب ایرانی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              روش‌های تشخیص برنج مرغوب ایران برنج، عضو جدایی ناپذیره سفره ما
+              ایرانی‌هاست. تقریبا در جوامع خاورمیانه و خصوصا شرق آسیا برنج قوت
+              غالب اکثر مردم
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 5 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/5.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              زعفران: انواع زعفران و ویژگی زعفران ایرانی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              زعفران: انواع زعفران و ویژگی زعفران ایرانی زعفران از دیرباز نزد
+              ایرانیان و سایر جهانیان از ادویه‌های محبوب و گرانبها محسوب میشده.
+              زعفران به خاطر
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 6 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/6.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              خواص جوز هندی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              از خواص جوز هندی چه می‌دانیدجادوی ادویه‌ها در طعم دادن به انواع
+              غذاها و نوشیدنی‌ها کلید خوشمزه شدن آنها محسوب می‌شود. جوز هندی یکی
+              از
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 7 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] w-full object-cover"
+            src="./public/img2/7.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              خواص منحصربه‌فرد چای سبز
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              خواص منحصر به فرد چای سبز چای سبز به دلیل حضور مقدار زیاد
+              آنتی‌اکسیدان قوی اپی‌گالوکاتچین گالات(EGCG)، می‌تواند در پیشگیری
+              از برخی انواع سرطان‌ها مانند
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!--item 8  -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/8.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              خواص منحصربه‌فرد چای سیاه
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              خواص منحصر به فرد چای سیاه چای سیاه که اغلب ما با نام چای
+              می‌شناسیم دارای ویژگی‌ها و فواید خاصی است که آن را از
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 9 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/9.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              تفاوت چای سیاه و سبز در چیست؟
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              تفاوت چای سیاه و سبز در چیست؟ چای سبز سالم تر است یا چای سیاه؟
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 10 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/10.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              طرز تهیه تاکو غذای مشهور مکزیکی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              طرز تهیه تاکو مکزیکی یکی از غذاهای معروف مکزیکی تاکو است، تاکو
+              شهرت جهانی دارد و در همه نقاط دنیا طرفداران فراوانی پیدا کرده است.
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 11 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/11.jpeg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              حبوبات منبع عالی پروتئین و انرژی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              حبوبات: منبع پروتئین و انرژی حبوبات، یکی از پرمصرف‌ترین ماده‌های
+              غذایی در سر سفره ما ایرانیان است که به خاطر ارزش غذایی بسیار
+              بالایشان جایگاه
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 12 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/12.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              رازهایی درباره فرآوری و تولید چای
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              تاریخچه تولید چای؛ رازهایی درباره فرآوری و تولید چای تولید چای از
+              اینجا اهمیت دارد که چای، یکی از جدایی‌ناپذیرترین نوشیدنی‌های برای
+              مردم ایران محسوب
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 13 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/13.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              تاریخچه برنج قهوه‌ای
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              تاریخچه تولید و مصرف برنج قهوه‌ای در گذشته ایران و بسیاری از
+              کشورهای جهان، برنج سفید را تنها نوع برنج موجود می‌دانستند. گذرزمان
+              باعث شد
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 14 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/14.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              بهترین دمنوش‌های آرامبخش
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              تاریخچه تولید چای؛ رازهایی درباره فرآوری و تولید چای فنجانی
+              نوشیدنی گرم می‌تواند یک عصر زیبا و آرام را برایتان به ارمغان
+              بیاورد. دمنوش‌های آرامبخش
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!--item 15  -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/15.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              برگر عدس
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              اگر دوست دارید که یک برگر گیاهی و کاملاً سالم داشته باشید برگر عدس
+              یک انتخاب مناسب برای شماست. عدس سرشار از پروتئین است و
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 16 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/16.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              باندنت کیک شکلاتی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              باندنت کیک مانند سایر کیک‌ها به روش عادی پخته می‌شود. اسم این کیک
+              از ظرف باندنت گرفته شده است. در واقع مایع و مواد کیک
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 17 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/17.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              آش انار
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              برای تهیه این آش از شب قبل حبوبات را بخیسانید. در ادامه برنج،
+              بلغور، لوبیا و عدس را بشورید و داخل یک قابلمه مناسب بریزید. در این
+              مرحله چند لیوان آب به قابلمه…
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 18 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/18.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              رولت مرغ
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              پیاز و سیر را در کاسه‌ی بزرگی رنده کنید. سپس مرغ چرخ شده، پودر
+              سوخاری، تخم مرغ، زعفران دم‌کرده، نمک، فلفل سیاه، پودر پاپریکا و
+              پودر گوجه را به آن اضافه کنید و …
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 19 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/19.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              کیک ردولوت
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              مواد لازم آرد سفید گلستان یک و نیم پیمانهشکر یک و نیم پیمانهتخم
+              مرغ دو عددباتر میلک یک پیمانهروغن مایع حدود یک پیمانهبیکینگ پودر
+              گلستان
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 20 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/20.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              استیک با سس قارچ
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              استیک را باید در تابه چدنی سرخ کرده و در هر نوبت یک استیک را در
+              تابه قرار داد. قطعات گوشت را کمی می کوبیم. دو طرف هر قطعه را به
+              نمک و فلفل آغشته می کنیم…
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 21 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/21.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              ماکارونی با سبزیجات
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌
+              می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌
+              روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 22 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/22.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              سوپ مکزیکی
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی
+              آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را از مایع آن
+              بیرون آورده…
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+
+        <!-- item 23 -->
+        <div class="w-[320px] h-[605px] shadow-xl">
+          <img
+            class="h-[287px] object-cover"
+            src="./public/img2/23.jpg"
+            alt=""
+          />
+          <div>
+            <p class="text-[#ff0000] text-[24px] px-3 dark:text-white">
+              چیلاکیله
+            </p>
+            <p
+              class="text-[#8898c5] text-[16px] text-justify leading-9 px-4 dark:text-black"
+            >
+              احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای
+              فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید جزئی جدانشدنی از
+              فهرست
+            </p>
+            <button
+              type="button"
+              onclick="location.href='./index1.html'"
+              class="dark:text-[#FAF0E6] w-[130px] h-[43px] text-[#6f7274] border border-graytouch rounded-[8px] text-[15px] font-light my-8 hover:bg-red-500 hover:text-white transition-all mr-5"
+            >
+              ادامه مطلب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full h-[95px] bg-[#eeefef] flex justify-center items-center gap-5 dark:bg-[#5a5e7e3f]"
+    >
+      <img
+        src="./public/img/facebook.png"
+        class="mix-blend-luminosity hover:mix-blend-normal transition-all w-[50px] h-[50px]"
+        alt=""
+      />
+      <img
+        src="./public/img/linkdin.png"
+        class="rounded-full hover:bg-cyan-800 hover:mix-blend-normal transition-all w-[50px] h-[50px]"
+        alt=""
+      />
+      <img
+        src="./public/img/telegram.png"
+        class="mix-blend-luminosity hover:mix-blend-normal transition-all w-[50px] h-[50px]"
+        alt=""
+      />
+      <img
+        src="./public/img/insta.png"
+        class="mix-blend-luminosity hover:mix-blend-normal transition-all w-[50px] h-[50px]"
+        alt=""
+      />
+    </div>
+    <div class="w-full h-[30px] bg-[#ed1c24] dark:bg-[#51516f]"></div>
+    <footer class="w-full h-[500px] bg-[#2b2b2b]">
+      <div
+        class="flex gap-24 justify-center mobile:gap-12 tablet:gap-14 desktop:gap-16"
+      >
+        <img
+          class="w-[115px] h-[90px]"
+          src="./public/img/footer-icon1.png"
+          alt=""
+        />
+        <img
+          class="w-[115px] h-[90px]"
+          src="./public/img/footer-icon2.png"
+          alt=""
+        />
+        <img
+          class="w-[115px] h-[90px]"
+          src="./public/img/footer-icon3.png"
+          alt=""
+        />
+        <img
+          class="w-[115px] h-[90px]"
+          src="./public/img/footer-icon4.png"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-center gap-14 text-white">
+        <h2
+          class="p-2 border-y my-4 w-[150px] text-center mobile:my-1 tablet:my-2"
+        >
+          تی بگ گلستان
+        </h2>
+        <h2
+          class="p-2 border-y my-4 w-[150px] text-center mobile:my-1 tablet:my-2"
+        >
+          ادویه گلستان
+        </h2>
+        <h2
+          class="p-2 border-y my-4 w-[150px] text-center mobile:my-1 tablet:my-2"
+        >
+          حبوبات گلستان
+        </h2>
+        <h2
+          class="p-2 border-y my-4 w-[150px] text-center mobile:my-1 tablet:my-2"
+        >
+          چای گلستان
+        </h2>
+      </div>
+      <div
+        class="flex justify-center leading-[40px] text-[13px] text-white gap-24 text-right max-mobile:gap-12 max-tablet:gap-20"
+      >
+        <div>
+          <p class="cursor-pointer">چای ممتاز هندوستان</p>
+          <p class="cursor-pointer">چای ممتاز ارل گری</p>
+          <p class="cursor-pointer">چای سیلان عطری</p>
+          <p class="cursor-pointer">چای ممتاز سيلان​</p>
+          <p class="cursor-pointer">چای صبحانه گلستان​</p>
+        </div>
+        <div>
+          <p class="cursor-pointer">تی بگ بلک لاين</p>
+          <p class="cursor-pointer">تی بگ ارل گری</p>
+          <p class="cursor-pointer">دمنوش نعناع</p>
+          <p class="cursor-pointer">دمنوش بابونه</p>
+          <p class="cursor-pointer">منوش چای سبز</p>
+        </div>
+        <div>
+          <p class="cursor-pointer">زعفران ممتاز خراسان</p>
+          <p class="cursor-pointer">ادویه کاری</p>
+          <p class="cursor-pointer">ادویه ماست و خیار</p>
+          <p class="cursor-pointer">فلفل سياه خالص</p>
+          <p class="cursor-pointer">زردچوبه ممتاز</p>
+        </div>
+        <div>
+          <p class="cursor-pointer">لوبيا قرمز ممتاز</p>
+          <p class="cursor-pointer">لوبيا چيتی گلستان</p>
+          <p class="cursor-pointer">عدس كانادايی</p>
+          <p class="cursor-pointer">نخود زودپز كرمانشاه</p>
+          <p class="cursor-pointer">لوبيا سفيد گلستان</p>
+        </div>
+      </div>
+      <p class="text-[#7f9f9f] text-center mt-14">
+        All Right Reserved Golestan Company 2022-2025
+      </p>
+      <p class="text-[#627b7b] text-center">Design By: Sadaf Molavi</p>
+    </footer>
+    <div class="sticky bottom-0 mr-[100%] max-tablet:mr-[90%]">
+      <a href="#header">
+        <svg
+          class="w-[50px] h-[50px] bg-yellow-200/[0.7] dark:bg-slate-500 rounded-full"
+          viewBox="-3 0 32 32"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <g id="icomoon-ignore"></g>
+          <path
+            d="M26.221 16c0-7.243-5.871-13.113-13.113-13.113s-13.113 5.87-13.113 13.113c0 7.242 5.871 13.113 13.113 13.113s13.113-5.871 13.113-13.113zM1.045 16c0-6.652 5.412-12.064 12.064-12.064s12.064 5.412 12.064 12.064c0 6.652-5.411 12.064-12.064 12.064-6.652 0-12.064-5.412-12.064-12.064z"
+            fill="#000000"
+          ></path>
+          <path
+            d="M18.746 15.204l0.742-0.742-6.379-6.379-6.378 6.379 0.742 0.742 5.112-5.112v12.727h1.049v-12.727z"
+            fill="#000000"
+          ></path>
+        </svg>
+      </a>
+    </div>
+    <script>
+      let darkbtn = document.querySelector("#darkbtn");
+      darkbtn.addEventListener("click", () => {
+        if (darkbtn.innerHTML == "Dark") {
+          document.querySelector("html").classList.remove("dark");
+          darkbtn.innerHTML = "Light";
+        } else {
+          document.querySelector("html").classList.add("dark");
+          darkbtn.innerHTML = "Dark";
+        }
+      });
+    </script>
+  </body>
+</html>
